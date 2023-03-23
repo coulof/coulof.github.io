@@ -8,4 +8,4 @@ weight: 1
 ---
 
 
-<iframe width="1140" height="640" sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts" src="https://play.instruqt.com/embed/dell/tracks/csm-quickstart?token=em_hdpeUhrpwfrkPUoo" style="border: 0;"></iframe>
+<iframe width="100%" height="640" sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts" src="https://play.instruqt.com/embed/dell/tracks/csm-quickstart?token=em_hdpeUhrpwfrkPUoo" style="border: 0;"></iframe>

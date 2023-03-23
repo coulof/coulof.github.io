@@ -1,56 +1,25 @@
-# Jekyll Curate Premium Theme
+# Dell Kubecon demo website
 
-Jekyll Curate is a portfolio theme with multiple project layouts.
+It uses Jekyll and the Curate Premium Theme
 
-### Documentation
-
-[Live Docs](https://www.zerostatic.io/docs/jekyll-curate)
+We use the Jekyll Curate theme with documentation [here](https://www.zerostatic.io/docs/jekyll-curate)
 
 ### Demo
 
-[Live Demo](https://jekyll-curate.netlify.app/)
+[Live Demo](https://coulof.github.io/)
 
-### Screenshot
+### Publish
+Videos are created in `collections/_projects` labs under `collection/_posts`.
 
-![Jekyll Curate Theme screenshot](https://www.zerostatic.io/theme/jekyll-curate/jekyll-curate-screenshot.png)
+It is a bit ugly but since labs map to blog posts we must prefix the files with the date or it won't render in the homepage
 
-## Install
+### Build
+Use `jekyll/builder` image and `caddy` for the webserver
 
-### Install Jekll
-
-Make sure you have Ruby & Jekyll installed - For a step-by-step guide, read Jekyll docs [installation](https://jekyllrb.com/docs/installation/)
-
-### Install Theme
-
-Extract the theme .zip file to your local computer. Navigate to the project root (it contains the README.md)
-
-Run `bundle install` to install gems.
-
-Then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
-
-To build the Jekyll site run `bundle exec jekyll build`
-
-## Deploy
-
-### Netlify
-
-This theme is pre-configured to deploy with [Netlify](https://docs.netlify.com/site-deploys/create-deploys/).
-
-> 💡 If you experience bundle install issues during the Netlify deployment, deleting the Gemfile.lock can sometimes help
-
-### GitHub Pages
-
-This theme works with GitHub Pages. If you are creating a GitHub Pages "Project site" then your site will be in a sub-folder ie `http://username.github.io/repository` You will need to update the `baseurl` in the `_config.yml` for the asset paths to work correctly.
-
-```yaml
-# _config.yml
-baseurl: "/jekyll-curate-pro" # This should be the name of your repo
+### Run
 ```
+docker run -p 9999:9999 coulof/kubecon-demos 
+```
+### Configure
 
-## Credits
-
-This theme uses open-source libraries and assets.
-
-- **Bootstrap 5** https://unsplash.com/license
-- **Font Awesome 6 Free:** https://fontawesome.com/
-- **Unsplash Images** https://unsplash.com/
+You can tweak colors and more in `_config.yml`.
