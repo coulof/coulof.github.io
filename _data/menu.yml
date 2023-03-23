@@ -1,0 +1,69 @@
+main:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Labs
+    url: /blog/
+    weight: 2
+    child:
+      - name: "CSM Quickstart"
+        icon: "/assets/images/icons/wireframe-5.svg"
+        icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
+        description: "All CSM on PowerFlex"
+        url: /blog/2023-03-03-CSM-Quickstart/
+      - name: "ArgoCD"
+        icon: "/assets/images/icons/icons8-merge-git-100.png"
+        # icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
+        description: "GitOps demo"
+        url: /blog/2023-03-15-ArgoCD/
+      - name: "Ansible PowerFlex"
+        icon: "/assets/images/icons/redhat.svg"
+        # icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
+        description: "Cluster deployment"
+        url: /blog/2023-03-01-Ansible-PowerFlex/
+  - name: Videos
+    url: /projects/
+    weight: 3
+
+footer_primary:
+  - name: "Project Layout 1"
+    url: /projects/project-1/
+  - name: "Project Layout 2"
+    url: /projects/project-2/
+  - name: "Project Layout 3"
+    url: /projects/project-3/
+  - name: "Project Layout 4"
+    url: /projects/project-4/
+
+footer_secondary:
+  - name: Blog
+    url: /blog/
+    weight: 2
+  - name: About
+    url: /about/
+    weight: 3
+  - name: Contact
+    url: /contact/
+    weight: 4
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 1
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 2
+
+footer_tertiary:
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 1
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 2
+
+bottom:
+  - name: Privacy Policy
+    url: /privacy-policy/
+    weight: 3
+  - name: Terms and Conditions
+    url: /terms-and-conditions/
+    weight: 4

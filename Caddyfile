@@ -1,0 +1,6 @@
+:9999 {
+  
+  encode gzip zstd
+  file_server browse
+  try_files {path}.html {path}
+}
