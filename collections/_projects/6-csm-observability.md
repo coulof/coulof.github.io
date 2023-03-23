@@ -4,11 +4,10 @@ title: Observability for Dell Storage infrastructure
 description: Learn how you can use the observability storage module to monitor storage metrics within tools like Grafana and Prometheus. 
 weight: 6
 thumbnail: "/assets/images/thumbnail/k8s-observability-pstore.png"
-image: "/assets/images/thumbnail/velero-with-powerscale.png"
 categories: ["CSM", observability, "grafana", "prometheus", "powerflex"]
 gallery:
   # - image: /assets/images/thumbnail/velero-with-powerscale.png
-  - video: /assets/videos/velero-powerscale-s3.mp4
+  - video: /assets/videos/csm-obs-pflex.mp4
 gallery_limit: 2
 ---
 # scenario

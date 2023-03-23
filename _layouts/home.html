@@ -46,7 +46,7 @@ body_classes: page-home
   <div class="container">
     <div class="row">
       {% include framework/blocks/components/grid-header.html heading="Hands-on-Lab" %}
-      {% for card in cards limit: 3 %}
+      {% for card in cards limit: 6 %}
       <div
         class="col-12 col-md-4 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
         {% include theme/cards/card-post.html

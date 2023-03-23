@@ -21,6 +21,14 @@ main:
         # icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
         description: "Cluster deployment"
         url: /blog/2023-03-01-Ansible-PowerFlex/
+      - name: "Kubernetes sandbox"
+        icon: "/assets/images/icons/docker.svg"
+        # icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
+        url: /blog/2023-02-28-Kubernetes-Sandbox
+      - name: "Terraform AWS"
+        icon: "/assets/images/icons/aws.svg"
+        # icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
+        url: /blog/2023-02-15-Terraform-AWS
   - name: Videos
     url: /projects/
     weight: 3

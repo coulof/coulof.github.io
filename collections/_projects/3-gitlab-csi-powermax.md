@@ -4,7 +4,6 @@ title: Kubernetes Application Deployment on PowerMax with GitLab
 description: Demo showing Kubernetes application deployment on Dell PowerMax storage platform with DevOps on GitLab
 weight: 3
 thumbnail: "/assets/images/thumbnail/k8s-gitlab-powermax.png"
-image: "/assets/images/gen/projects/project-2-1.webp"
 categories: ["gitlab", "ci/cd", "powermax"]
 gallery:
   - video: "/assets/videos/gitlab-csi-powermax.mp4"
