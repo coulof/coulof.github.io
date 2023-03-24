@@ -3,7 +3,7 @@ layout: post
 title: "Terraform AWS"
 date: 2023-02-15
 description: Learn the basics of using Terraform to launch AWS Resources
-thumbnail: "/assets/images/thumbnail/k8s-app-mobility.png"
+thumbnail: "/assets/images/thumbnail/hol-ansible-aws.png"
 weight: 6
 ---
 

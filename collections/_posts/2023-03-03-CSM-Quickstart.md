@@ -3,7 +3,7 @@ layout: post
 title: "CSM Quickstart"
 date: 2023-02-13
 description: Try CSM Modules with PowerFlex
-thumbnail: "/assets/images/thumbnail/k8s-app-mobility.png"
+thumbnail: "/assets/images/thumbnail/hol-csm.png"
 weight: 1
 ---
 
