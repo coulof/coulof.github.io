@@ -5,6 +5,17 @@ body_classes: page-project
 
 {% assign limit = page.gallery_limit | default: 6 %}
 
+{% comment %}
+Ugliest patch ever !
+{% endcomment %}
+{% if page.gallery.size > 1 %}
+  {% assign style = "width: 100%;" %}
+  {% assign gallery = "gallery-single-column" %}
+{% else %}
+  {% assign style = "width: 200%;" %}
+  {% assign gallery = "gallery-single-column" %}
+{% endif %}
+
 <div class="section">
   <div class="container"><a href="/" class="menu-main ul li">&lt;Back to main menu</a></div>
   <div class="container">
@@ -54,7 +65,7 @@ body_classes: page-project
 
     <div class="row">
       <div class="col">
-        <div class="gallery gallery-masonry">
+        <div class="gallery {{ gallery }} gallery-masonry">
         {% for item in page.gallery limit: limit %}
         {% if item.image %}
           <div class="gallery-item">
@@ -67,8 +78,8 @@ body_classes: page-project
           {% if item.video %}
           <div class="gallery-item">
             <div class="gallery-image">
-              <video controls preload='metadata' onclick='(function(el){ if(el.paused) el.play(); else el.pause() })(this)'>
-                <source src="{{ item.video | relative_url }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              <video src="{{ item.video | relative_url }}" style="{{ style }}" controls>
+                <!-- <source src="{{ item.video | relative_url }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
               </video>
             </div>
           </div>
