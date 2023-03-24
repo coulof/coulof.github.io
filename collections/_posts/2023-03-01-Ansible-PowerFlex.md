@@ -3,7 +3,7 @@ layout: post
 title: "Ansible Powerflex"
 date: 2023-03-01
 description: Using Ansible to bootstrap PowerFlex
-thumbnail: "/assets/images/thumbnail/k8s-app-mobility.png"
+thumbnail: "/assets/images/thumbnail/hol-ansible-pflex.png"
 weight: 3
 ---
 

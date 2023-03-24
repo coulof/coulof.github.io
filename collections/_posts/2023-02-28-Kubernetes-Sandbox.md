@@ -3,7 +3,7 @@ layout: post
 title: "Kubernetes Sandbox"
 date: 2023-02-28
 description: Experiment Kubernetes
-thumbnail: "/assets/images/thumbnail/k8s-app-mobility.png"
+thumbnail: "/assets/images/thumbnail/hol-k8s-sandbox.png"
 weight: 4
 ---
 
