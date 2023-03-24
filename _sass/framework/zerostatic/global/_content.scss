@@ -137,4 +137,29 @@
       margin: 0;
     }
   }
+  table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    thead {
+      tr {
+        background-color: #e0dfdf;
+      }
+    }
+    tbody {
+      tr:nth-child(even) {
+        background-color: #f5f5f5;
+      }
+    }
+    td, th {
+      text-align: left;
+      padding: 8px 12px;
+      border: 1px solid #EAEAEA;
+    }
+  }
 }

@@ -53,14 +53,15 @@ body_classes: page-project
     </div>
 
     <div class="row">
-      <div class="project-image">
-        <div class="gallery gallery-2">
-          <div class="gallery-sizer"></div>
+      <div class="col">
+        <div class="gallery gallery-masonry">
         {% for item in page.gallery limit: limit %}
         {% if item.image %}
           <div class="gallery-item">
-            <div class="gallery-image"><img width="615" height="400" src="{{ item.image | relative_url }}"/></div>
+            <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
+            {% if item.caption %}
             <div class="gallery-caption">{{ item.caption }}</div>
+            {% endif %}
           </div>
           {% endif %}
           {% if item.video %}
@@ -88,8 +89,7 @@ body_classes: page-project
   imagesLoaded( grid, function() {
     msnry = new Masonry( grid, {
       itemSelector: '.gallery-item',
-      columnWidth: '.gallery-sizer',
-      gutter: 30
+      percentPosition: true,
     });
   });
 </script>

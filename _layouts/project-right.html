@@ -51,27 +51,14 @@ body_classes: page-project
 
       </div>
 
-      <div class="col-12 col-md-6">
-        <div class="project-image">
-          <div class="gallery gallery-1">
+      <div class="col-12 col-md-6 mt-6 mt-md-0">
+        <div class="gallery gallery-single-column">
           {% for item in page.gallery limit: limit %}
-            {% if item.image %}
             <div class="gallery-item">
               <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
               <div class="gallery-caption">{{ item.caption }}</div>
             </div>
-            {% endif %}
-            {% if item.video %}
-            <div class="gallery-item">
-              <div class="gallery-image">
-                <video controls preload='metadata' onclick='(function(el){ if(el.paused) el.play(); else el.pause() })(this)'>
-                  <source src="{{ item.video | relative_url }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                </video>
-              </div>
-            </div>
-            {% endif %}
           {% endfor %}
-          </div>
         </div>
       </div>
 
