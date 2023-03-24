@@ -67,8 +67,8 @@ body_classes: page-project
           {% if item.video %}
           <div class="gallery-item">
             <div class="gallery-image">
-              <video controls preload='metadata' onclick='(function(el){ if(el.paused) el.play(); else el.pause() })(this)'>
-                <source src="{{ item.video | relative_url }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              <video src="{{ item.video | relative_url }}" style="width: 200%;"class="object-fit-scale" controls>
+                <!-- <source src="{{ item.video | relative_url }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
               </video>
             </div>
           </div>
