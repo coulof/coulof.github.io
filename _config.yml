@@ -117,6 +117,12 @@ logo:
   show_logo_text_on_mobile: false
   show_logo_text_on_desktop: false
   
+seo:
+  meta_opengraph_type: "website"
+  meta_twitter_card: "summary"
+  meta_twitter_site: "@zerostaticio"
+  meta_twitter_creator: "@zerostaticio"
+
 header: 
   fixed: false
 
@@ -139,6 +145,7 @@ contact_form:
   use_netlify_form: false
   use_formspree_form: false
   formspree_endpoint: https://formspree.io/f/moqyklqv
+  netlify_form_name: "contact"
 
 menu: 
   show_dropdown_items_in_mobile_menu: true
