@@ -73,21 +73,27 @@ colors:
   primary: "#0d042b"
   primary_2: "#0d042b"
   primary_text: "#fdfcf9"
+  secondary: "#faebd7"
   background: "#e5f8ff"
   background_2: "#80c7fb"
   background_3: "#0672cb"
   text: "#0d042b"
   text_2: "#3b364c"
+  logo_text: "#0d042b"
+  menu_text: "#0d042b"
 
   # dark-mode colors
   primary_dark: "#0d042b"
   primary_2_dark: "#0d042b"
   primary_text_dark: "#fdfcf9"
+  secondary_dark: "#251654"
   background_dark: "#0d2155"
   background_2_dark: "#0c32a4"
   background_3_dark: "#0672cb"
   text_dark: "#f5f5ec"
   text_2_dark: "#929eaf"
+  logo_text_dark: "#fdfcf9"
+  menu_text_dark: "#fdfcf9"
 
 fonts:
   google_fonts: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fira+Mono&display=swap"
