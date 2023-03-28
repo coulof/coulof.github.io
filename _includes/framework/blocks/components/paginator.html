@@ -10,7 +10,7 @@
       {% if page == paginator.page %}
         <li class="active"><span>{{ page }}</span></li>
       {% elsif page == 1 %}
-        <li><a href="{{ 'blog' | relative_url }}">{{ page }}</a></li>
+        <li><a href="{{ 'labs' | relative_url }}">{{ page }}</a></li>
       {% else %}
         <li><a href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
       {% endif %}

@@ -14,7 +14,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 6
-paginate_path: "/blog/page/:num"
+paginate_path: "/labs/page/:num"
 
 collections:
   projects:
@@ -22,7 +22,7 @@ collections:
     permalink: /:collection/:path/
   posts:
     output: false
-    permalink: /blog/:path/
+    permalink: /labs/:path/
 
 defaults:
   - scope:

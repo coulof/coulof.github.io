@@ -20,10 +20,11 @@ body_classes: page-home
 {% if cards.size > 0 %}
 <div class="section pt-0">
   <div class="container">
-    <div class="row">
+    <div style="padding-left:10%" class="row">
      
       {% for card in cards limit: 6 %}
       <div
+        style="width:35%"
         class="col-12 col-md-6 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
         {% include theme/cards/card-project.html
         title=card.title
