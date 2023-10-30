@@ -1,4 +1,4 @@
-FROM docker.io/jekyll/builder:4 as build
+FROM docker.io/jekyll/builder:3 as build
 COPY . /srv/jekyll
 USER root
 RUN cd /srv/jekyll && jekyll build  --destination /tmp/srv/jekyll/dist
